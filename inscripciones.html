@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link class="iconLog" rel="icon" href="images/logo.png">
+    <script src="js/menu.js"></script>
+    <script src="js/tabla.js"></script>
+    <title>Yoga Flex</title>
+</head>
+
+<body>
+    <header>
+        <div class="logoTitle">
+            <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+            <h1>Yoga Flex</h1>
+
+            <div class="btn_menu">
+                <a href="#"><img src="images/menu.png" alt="Menu"></a>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="recomendaciones.html">Recomendaciones</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="inscripciones.html">Inscripciones</a></li>
+            </ul>
+        </nav>
+
+        <img src="images/portada.jpg" alt="coverPhoto" />
+        <h2>Elegí tu plan y empezá a entrenar.</h2>
+    </header>
+
+        <section class="contentInscripcion">
+            <form>
+                <h3>Formulario de inscripción</h3>
+                <label for="name">Alumno:<input type="text" name="name" id="alumno" /></label>
+                <label for="email">Correo:<input type="email" name="correo" id="email" /></label>
+                <label for="telefono">Telefono:<input type="tel" name="telefono" id="telefono" /></label>
+
+                <label for="type">Actividad elegida:
+                    <select id="actividad" name="tipo">
+                        <option value="Kundalini Yoga">Kundalini Yoga</option>
+                        <option value="Yoga Integral">Yoga Integral</option>
+                        <option value="Yoga Ride">Yoga Ride</option>
+                        <option value="Hatha Yoga">Hatha Yoga</option>
+                        <option value="Yoga Iyengar">Yoga Iyengar</option>
+                        <option value="Yoga Prenatal">Yoga Prenatal</option>
+                        <option value="Nutri-Fit Yoga">Nutri-Fit Yoga</option>
+
+                    </select></label>
+                <p class="descuento">Recordá que podes reservar planes de entrenamiento trimestrales</p>
+                <div class="registerSend">
+                    <button id="add">Agregar</button>
+                    <button id="add_more">Agregar varios</button>
+                    <input type="number" name="number" id="cantidad" value="3" />
+                </div>
+
+                <p class="descuento">Con tu inscripción a Kundalini Yoga obtené 30% OFF</p>
+
+                <label>Filtrar:
+                    <select name="selectFiltro" id="selectFiltro">
+                        <option value="tablaCompleta">Mostrar tabla completa</option>
+                        <option value="conDescuento">Mostrar tabla solo con descuento</option>
+                        <option value="sinDescuento">Mostrar tabla sin descuento</option>
+                    </select>
+                </label>
+            
+            </form>
+            <div>
+                <table class="inscriptos">
+                    <thead>
+                        <tr>
+                            <th>Alumno/a</th>
+                            <th>Actividad</th>
+                            <th>Telefono</th>
+                            <th>Email</th>
+                            <th>Editar</th>
+                            <th>Borrar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_body">
+
+                    </tbody>
+                </table>
+                <p id="aviso"></p>
+                <div class="paginacion">
+                    <button id="prev" class="ocultar"><img src="images/previous.png" /></button>
+                    <button id="next" class="ocultar"><img src="images/next.png" /></button>
+                </div>
+            </div>
+
+        </section>
+
+   
+</body>
+
+</html>
