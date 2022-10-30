@@ -2,3 +2,210 @@
     font-family: PoppinsRegular;
     src: url(../fonts/poppins/Poppins-Regular.ttf);
 }
+
+/* UMBRAL DE CAMBIO */
+@media only screen and (min-width: 600px) {
+    body {
+        font-size: medium;
+    }
+    .container {
+        margin: 3rem;
+    }
+
+    h5, table, .inscriptos {
+        font-size: medium;
+    }
+    h1 {
+        font-size: xx-large;
+    }
+    h2 {
+        font-size: x-large;
+    }
+    h3 {
+        font-size: large;
+    }
+
+    /* BARRA MENU */
+    nav ul {
+        flex-direction: row;
+    }
+    nav {
+        justify-content: center;
+    }
+    nav li {
+        margin: 0px 30px;
+        /*0px para ariba y abajo - 30px para izquierda y derecha */
+        padding: 15px;
+    }
+    .btn_menu {
+        display: none;
+    }
+    ul.navigation {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logoTitle img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    /* PAGINA - INDEX */
+    article {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+    .imgYoga {
+        grid-template-areas:
+            "area-yoga1 area-yoga2"
+            "area-yoga3 area-yoga4"
+            "area-yoga5 area-yoga6"
+            "area-yoga7 area-yoga8"
+    }
+    figure.imgYoga img {
+        height: 273px;
+        width: 376px;
+    }
+    article section {
+        margin-right: 5%;
+        width: 50%;
+    }
+    section h4 {
+        text-align: start;
+    }
+    .firstText {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 40px;
+    }
+    .firstText p {
+        margin: 2rem;
+    }
+
+    /* PAGINA - ACTIVIDADES - INSCRIPCIONES */
+
+    /* FORM*/
+    .contentInscripcion {
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 3rem;
+    }
+    .contentInscripcion table {
+        width: 100%;
+        margin-top: 0;
+    }  
+    .contentInscripcion div {
+        width: 65%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .contentInscripcion form {
+        width: 30%;
+        height: 650px;
+        margin-top: 0;
+    }
+    .contentInscripcion form .registerSend {
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 100px;
+    }
+
+    div.paginacion{
+        flex-direction: row; 
+        margin-left: 160px; 
+    }
+    #add, #addMore{
+        margin-right: 15px;
+    }
+    #cantidad{
+        margin-left: 15px;
+    }
+    .descuento {
+        margin-top: 20px;
+        border-radius: 15px;
+        padding: 20px;
+        margin: 10px;
+        font-size: small;
+    }
+    table {
+        width: 98%;
+        margin-left: 20px;
+    }
+    .inscriptos{
+    display: inline-table;
+    }
+    .textActivities {
+        padding: 3rem;
+    }
+
+    .contentForm {
+        flex-direction: row;
+        margin-top: 5rem;
+        padding: 4rem;
+    }
+    p .textForm {
+        width: 90%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    form {
+        width: 60%;
+        margin: 0.5rem;
+        padding: 3rem;
+    }
+    form select {
+        width: 48%;
+    }
+    input {
+        width: 60%;
+        margin-bottom: 0.25rem;
+        margin-left: 1rem;
+    }
+    label {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+    .finalText img {
+        width: 80%;
+    }
+    .captcha {
+        display: flex;
+        justify-content: space-between;
+    }
+    #captcha {
+        margin: 0;
+    }
+
+    /* PAGINA - RECOMENDACIONES */
+    
+    .benefits {
+        flex-direction: row;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    figure.imgActividadYoga img {
+        width: 95%;
+        height: 95%;
+    }
+    .pregnant, .nutriFitYoga, figure.imgActividadYoga{
+    width: 48%;
+    text-align: justify;
+    }
+    .items_1_8, .items_2_7, .items_4_6, .items_3_5 {
+        text-align: justify;
+        padding: 2rem;
+    }
+
+    /* FOOTER */
+    .info p {
+        font-size: small;
+    }
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
