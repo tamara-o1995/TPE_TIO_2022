@@ -10,6 +10,95 @@ function iniciarPagina() {
     aviso.innerHTML="";
     mostrarTabla();
 
+    document.querySelector("#selectFiltro").addEventListener("click", filtrar);
+    document.querySelector("#add").addEventListener("click", agregar);
+    document.querySelector("#add_more").addEventListener("click", agregarVarios);
+
+    async function agregar(event) {
+        event.preventDefault();
+        try {
+            let alumno = {
+                "thing": {
+                    "alumno": document.querySelector("#alumno").value,
+                    "actividad": document.querySelector("#actividad").value,
+                    "telefono": document.querySelector("#telefono").value,
+                    "email": document.querySelector("#email").value
+                }
+            };
+            if (alumno.thing.actividad && alumno.thing.alumno && alumno.thing.telefono && alumno.thing.email != "") {
+                let response = await fetch(url, {
+                    "method": "POST",
+                    "mode": 'cors',
+                    "headers": { "Content-Type": "application/json" },
+                    "body": JSON.stringify(alumno) 
+                });
+                console.log(response);
+                if (!response.ok) {
+                    aviso.innerHTML = "Error"; 
+                } else {
+                    mostrarTabla();
+                    aviso.innerHTML = "Se agregó con éxito"; 
+                };
+            }
+            else {
+                aviso.innerHTML = "Campos Incompletos"; 
+            }
+        } catch (response) {
+            aviso.innerHTML = "Sin Conexión";  
+        }
+    }
+
+    function agregarVarios(event) {
+        event.preventDefault();
+        let varios = document.querySelector("#cantidad").value;
+        for (let i = 0; i < varios; i++) {
+            agregar(event);
+        }
+        mostrarTabla();
+    }
+
+    function filtrar() {
+        let filtro = document.querySelector("#selectFiltro");
+        let filas = document.querySelectorAll("#table_body tr");
+
+        for (let i = 0; i < filas.length; i++) {
+
+            if (filtro.value === "conDescuento") {
+
+                if (filas[i].classList.contains('resaltar')) {
+                    filas[i].classList.remove("ocultarFila");
+                }
+                else {
+                    filas[i].classList.add("ocultarFila");
+                }
+            }
+            else if (filtro.value === "sinDescuento") {
+
+                if (filas[i].classList.contains('resaltar')) {
+                    filas[i].classList.add("ocultarFila");
+                }
+                else {
+                    filas[i].classList.remove("ocultarFila");
+                }
+            }
+            else if (filtro.value === "tablaCompleta") {
+                filas[i].classList.remove("ocultarFila");
+            }
+        }
+    }
+
+    document.querySelector("#prev").addEventListener("click", anterior);
+    document.querySelector("#next").addEventListener("click", siguiente);
+
+    function anterior() {
+        page--;
+        mostrarTabla();
+    }
+
+    function siguiente() {
+        page++;
+        mostrarTabla();
+    }
     
     async function mostrarTabla() {       
         let tabla = document.querySelector("#table_body");
