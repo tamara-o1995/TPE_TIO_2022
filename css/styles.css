@@ -13,15 +13,15 @@ body, ol, figure img, figure{
 }
 h1 {
     margin-left: 1.5rem;
-    border-left: solid 2px white;
+    border-left: solid 2px rgb(243, 176, 176);
     padding-left: 1.5rem;
     font-size: large;
 }
 h2, h3, h4, section a {
-    color: #3c24da;
+    color: #a497f8;
 }
 h5{
-    color: #3f1d3f;
+    color: #704070;
 }
 header, h3, h4, h5, section a {
     text-transform: uppercase;
@@ -409,11 +409,11 @@ td{
 #captcha {
     text-align: center;
     font-size: large;
-    color: #154360;
+    color: #183445;
     padding: 5px;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
-    background-color: #7e97a762;
+    background-color: #99a2a962;
     margin-left: 5.5rem;
 }
 
@@ -433,7 +433,7 @@ footer {
     justify-content: center;
     display: grid;
     background-color: #32506a;
-    color: #e0c3b1;
+    color: #e0b1d8;
     padding: 1rem;
     grid-template-areas:
         "area-logoTitle area-logoTitle"
