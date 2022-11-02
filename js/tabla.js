@@ -201,6 +201,8 @@ function iniciarPagina() {
             });
         }
     }
+
+    // Funcion de borrar por ID
     async function borrar(id) {
         try {
             let response = await fetch(url + "/" + id, {
