@@ -10,6 +10,7 @@ function iniciarPagina() {
     aviso.innerHTML="";
     mostrarTabla();
 
+    
     async function mostrarTabla() {       
         let tabla = document.querySelector("#table_body");
         document.querySelector("#aviso").innerHTML = "";  
