@@ -4,8 +4,8 @@
 }
 
 body {
-    font-family: Bebas, Arial, Helvetica, sans-serif;
-    background: linear-gradient(#5bb9f3, #e4bab0ae, #ecc3f6, #e0c3b1);
+    font-family: PoppinsRegular, Arial, Helvetica, sans-serif;
+    background: linear-gradient(#98b0bf, #e4bab0ae, #7e97a7, #e0c3b1);
     font-size: small;
 }
 
@@ -19,10 +19,17 @@ h1 {
     font-size: large;
 }
 h2, h3, h4, section a {
+<<<<<<< HEAD
+    color: #154360;
+}
+h5{
+    color: #e0c3b1;
+=======
     color: #3c24da;
 }
 h5{
     color: #3f1d3f;
+>>>>>>> 8e9b3cd5e9351bb624748607d376ce9cf81be516
 }
 header, h3, h4, h5, section a {
     text-transform: uppercase;
@@ -54,7 +61,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #da77e7;
+    background: #32506a;
     padding: 0px 10px;
 }
 nav li a {
@@ -86,7 +93,7 @@ nav li a, section a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #160a4f;
+    background-color: #042b43;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -178,10 +185,10 @@ ol {
     background-color: #cba8b2;
 }
 .items_3_5 {
-    background-color: #f79f52;
+    background-color: #FFDAB9;
 }
 .items_4_6 {
-    background-color: #f76363;
+    background-color: #f7bfbf;
 }
 .benefits {
     background: #eaccc9;
