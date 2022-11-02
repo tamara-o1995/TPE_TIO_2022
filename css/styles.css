@@ -19,10 +19,17 @@ h1 {
     font-size: large;
 }
 h2, h3, h4, section a {
+<<<<<<< HEAD
     color: #154360;
 }
 h5{
     color: #e0c3b1;
+=======
+    color: #3c24da;
+}
+h5{
+    color: #3f1d3f;
+>>>>>>> 8e9b3cd5e9351bb624748607d376ce9cf81be516
 }
 header, h3, h4, h5, section a {
     text-transform: uppercase;
