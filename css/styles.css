@@ -2,9 +2,10 @@
     font-family: PoppinsRegular;
     src: url(../fonts/poppins/Poppins-Regular.ttf);
 }
+
 body {
     font-family: Bebas, Arial, Helvetica, sans-serif;
-    background: linear-gradient(#5bb9f3, #e4bab0ae, #ecc3f6, #f6c8ac);
+    background: linear-gradient(#5bb9f3, #e4bab0ae, #ecc3f6, #e0c3b1);
     font-size: small;
 }
 
@@ -13,15 +14,15 @@ body, ol, figure img, figure{
 }
 h1 {
     margin-left: 1.5rem;
-    border-left: solid 2px rgb(243, 176, 176);
+    border-left: solid 2px white;
     padding-left: 1.5rem;
     font-size: large;
 }
 h2, h3, h4, section a {
-    color: #a497f8;
+    color: #3c24da;
 }
 h5{
-    color: #704070;
+    color: #3f1d3f;
 }
 header, h3, h4, h5, section a {
     text-transform: uppercase;
@@ -191,7 +192,7 @@ ol {
 }
 
 /* PAGINA - ACTIVIDADES */
-/* /TABLAS/ */
+/*TABLAS*/
 table, .inscriptos {
     border-collapse: collapse;
     background: #efdadad5;
@@ -204,7 +205,7 @@ table {
 }
 .inscriptos {
     margin: 0;
-    /* /para que se vea en mobile sin romperse el ancho de la pag, hago un scroll horizontal solo en la tabla/ */
+    /*para que se vea en mobile sin romperse el ancho de la pag, hago un scroll horizontal solo en la tabla*/
     display: block;
     overflow-x: auto;
 }
@@ -409,11 +410,11 @@ td{
 #captcha {
     text-align: center;
     font-size: large;
-    color: #183445;
+    color: #154360;
     padding: 5px;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
-    background-color: #99a2a962;
+    background-color: #7e97a762;
     margin-left: 5.5rem;
 }
 
@@ -433,7 +434,7 @@ footer {
     justify-content: center;
     display: grid;
     background-color: #32506a;
-    color: #e0b1d8;
+    color: #e0c3b1;
     padding: 1rem;
     grid-template-areas:
         "area-logoTitle area-logoTitle"
@@ -470,6 +471,7 @@ footer .logo {
     height: 150px;
     margin-left: 10px;
 }
+
 /* UMBRAL DE CAMBIO */
 @media only screen and (min-width: 600px) {
     body {
