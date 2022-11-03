@@ -4,15 +4,19 @@
 }
 
 body {
-<<<<<<< HEAD:css/styles.css
+
     font-family: Bebas, Arial, Helvetica, sans-serif;
     background: linear-gradient(#bde1f7, #e4bab0ae, #ecc3f6, #e0c3b1);
     font-size: small;
-=======
+
+    font-family: Bebas, Arial, Helvetica, sans-serif;
+    background: linear-gradient(#bde1f7, #e4bab0ae, #ecc3f6, #e0c3b1);
+    font-size: small;
+
     font-family: PoppinsRegular, Arial, Helvetica, sans-serif;
     background: linear-gradient(#98b0bf, #e4bab0ae, #7e97a7, #e0c3b1);
     font-size: medium;
->>>>>>> 6001cdd7246b049c32df43390f85c75fa72dc628:css/style.css
+
 }
 
 body, ol, figure img, figure{
