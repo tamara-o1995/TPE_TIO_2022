@@ -6,7 +6,7 @@
 body {
     font-family: PoppinsRegular, Arial, Helvetica, sans-serif;
     background: linear-gradient(#98b0bf, #e4bab0ae, #7e97a7, #e0c3b1);
-    font-size: small;
+    font-size: medium;
 }
 
 body, ol, figure img, figure{
