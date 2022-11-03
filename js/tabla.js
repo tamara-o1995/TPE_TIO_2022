@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", iniciarPagina);
+// Funcion que se usa al iniciar la pagina
 
 function iniciarPagina() { 
     "use strict";
